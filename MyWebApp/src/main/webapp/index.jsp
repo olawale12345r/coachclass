@@ -9,12 +9,11 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, sjkkkujkans-serif;
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh; hegfyhjhiug
+            align-items: ceiug
             margin: 0;
         }
 
