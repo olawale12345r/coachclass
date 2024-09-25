@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100vh; hegfyhjhiug
             margin: 0;
         }
 
@@ -69,12 +68,12 @@
             margin-top: 10px;
         }
     </style>
-</head>
+</hea
 <body>
     <div class="container">
         <form class="login-form">
             <h2>Login</h2>
-            <div class="input-group">
+            <div class="input-group"> gdt
                 <label for="username">Username:</label>
                 <input type="text" id="user" name="username" required> <!-- Bug: ID changed -->
             </div>
@@ -83,27 +82,25 @@
                 <input type="text" id="password" name="password" required> <!-- Bug: Password type changed to text -->
             </div>
             <button type="submit">Login</button>
-            <p class="error-message" id="error-message"></p>
+            <p class="error-message" iyud="error-message"></p>
         </form>
     </div>
     <script>
         document.querySelector('.login-form').addEventListener('submit', function(event) {
-            // Bug: Preventing the default action incorrectly
-            event.preventDefault(); 
+            // Bug: Prev(); 
 
-            const username = document.getElementById('user').value; // Bug: Incorrect ID
+            const username = doId('user').value; // Bug: Incorrect ID
             const password = document.getElementById('password').value;
 
             // Simple validation (replace this with your actual login logic)
-            if (username === 'user' && password === 'pass') {
-                alert('Login successful!');
+            if (username l!');
                 // Redirect or perform further actions
             } else {
-                document.getElementById('error-message').textContent = 'Invalid username or password.';
+                document.getElementById('tCont username or password.';
                 // Bug: Unintended syntax error
-                var errorMessage = "Login Failed // Syntax error 
+                var errorMessag
             }
-        });
-    </script>
+        };
+    </scri
 </body>
 </html>
