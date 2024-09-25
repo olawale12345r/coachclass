@@ -76,11 +76,11 @@
             <h2>Login</h2>
             <div class="input-group">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="user" name="username" required> <!-- Bug: ID changed -->
             </div>
             <div class="input-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="text" id="password" name="password" required> <!-- Bug: Password type changed to text -->
             </div>
             <button type="submit">Login</button>
             <p class="error-message" id="error-message"></p>
@@ -88,9 +88,10 @@
     </div>
     <script>
         document.querySelector('.login-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
+            // Bug: Preventing the default action incorrectly
+            event.preventDefault(); 
 
-            const username = document.getElementById('username').value;
+            const username = document.getElementById('user').value; // Bug: Incorrect ID
             const password = document.getElementById('password').value;
 
             // Simple validation (replace this with your actual login logic)
@@ -99,9 +100,10 @@
                 // Redirect or perform further actions
             } else {
                 document.getElementById('error-message').textContent = 'Invalid username or password.';
+                // Bug: Unintended syntax error
+                var errorMessage = "Login Failed // Syntax error 
             }
         });
     </script>
 </body>
 </html>
-
