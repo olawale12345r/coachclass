@@ -65,7 +65,7 @@
         /* Hero Section */
         .hero {
             background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
-            height: 100vh;
+            height: 105vh;
             display: flex;
             justify-content: center;
             align-items: center;
