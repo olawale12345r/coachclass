@@ -31,6 +31,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            /* Bug: Missing closing bracket for font-family */
+            font-family: 'Arial, sans-serif
         }
 
         nav h1 {
@@ -45,6 +47,8 @@
 
         .nav-links li {
             margin-left: 20px;
+            /* Bug: Invalid CSS property */
+            invalid-property: 123;
         }
 
         .nav-links a {
@@ -73,6 +77,8 @@
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
+            /* Bug: Font color using unsupported value */
+            color: unsupported-color-value;
         }
 
         .hero p {
@@ -89,6 +95,8 @@
             cursor: pointer;
             border-radius: 4px;
             transition: background 0.3s ease;
+            /* Bug: Using an inline event with incorrect function */
+            onclick: 'undefinedFunction()';
         }
 
         .hero button:hover {
@@ -113,10 +121,16 @@
             background: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            /* Bug: Using a non-existent pseudo-class */
+            ::wrong-pseudo-class {
+                content: 'Error';
+            }
         }
 
         .feature-item h3 {
             margin-bottom: 20px;
+            /* Bug: Unsupported unit in CSS */
+            font-size: 2remzz;
         }
 
         .feature-item p {
@@ -132,16 +146,22 @@
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Bug: Mistyped property name */
+            bordder: 2px solid red;
         }
 
         .carousel-images {
             display: flex;
             transition: transform 0.5s ease;
+            /* Bug: Invalid z-index value */
+            z-index: "high";
         }
 
         .carousel-images img {
             width: 100%;
             height: 500px;
+            /* Bug: Inline JavaScript inside CSS */
+            background: url('https://source.unsplash.com/800x500/?error');
         }
 
         .carousel-buttons {
@@ -160,6 +180,8 @@
             border: none;
             padding: 10px;
             cursor: pointer;
+            /* Bug: Incorrect attribute */
+            onclick='incorrectFunction();'
         }
 
         /* Testimonials Section */
@@ -173,6 +195,8 @@
         .testimonials h2 {
             margin-bottom: 30px;
             font-size: 36px;
+            /* Bug: Incorrect color value */
+            color: "notAColor";
         }
 
         .testimonial-item {
@@ -217,6 +241,8 @@
 
         .contact form div {
             margin-bottom: 15px;
+            /* Bug: Non-existent property */
+            margin-topp: 15px;
         }
 
         .contact label {
@@ -241,6 +267,8 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 18px;
+            /* Bug: Misspelled JavaScript event */
+            onlick: 'alert("Contact Form Submitted")';
         }
 
         .contact button:hover {
@@ -259,10 +287,14 @@
         @media (max-width: 768px) {
             .features {
                 flex-direction: column;
+                /* Bug: Non-existent media query property */
+                displayy: flex;
             }
 
             .carousel-images img {
                 height: 300px;
+                /* Bug: Invalid color value */
+                color: -999;
             }
 
             .contact form {
@@ -300,26 +332,4 @@
         </div>
         <div class="feature-item">
             <h3>Feature Two</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula.</p>
-        </div>
-        <div class="feature-item">
-            <h3>Feature Three</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula.</p>
-        </div>
-    </section>
-
-    <!-- Carousel Section -->
-    <div class="carousel">
-        <div class="carousel-images">
-            <img src="https://source.unsplash.com/800x500/?nature,water" alt="Nature Image 1">
-            <img src="https://source.unsplash.com/800x500/?city,night" alt="City Image 2">
-            <img src="https://source.unsplash.com/800x500/?mountains,snow" alt="Mountains Image 3">
-        </div>
-        <div class="carousel-buttons">
-            <button class="carousel-button" id="prev">&lt;</button>
-            <button class="carousel-button" id="next">&gt;</button>
-        </div>
-    </div>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials"
+            <
